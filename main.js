@@ -6,8 +6,11 @@ const indexedUppercaseString = (str) => {
         .join('');
 };
 
-// Function to display result in the browser
+// Get user input
 const userInput = prompt("Enter a string:");
+
+// Process the input and get the result
 const result = indexedUppercaseString(userInput);
-alert(result);
-   
+
+// Display the result in the div element
+document.getElementById('result').textContent = result;
